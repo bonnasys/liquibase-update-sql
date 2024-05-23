@@ -5,8 +5,8 @@ Generate the SQL to deploy changes in the changelog which have not been deployed
 ## Usage
 ```yaml
 steps:
-- uses: actions/checkout@v3
-- uses: liquibase-github-actions/update-sql@v4.27.0
+- uses: actions/checkout@v4
+- uses: bonnasys/liquibase-update-sql@v4.27.0
   with:
     # The root changelog
     # string
@@ -89,8 +89,8 @@ The liquibase update sql action accepts all valid liquibase global options as op
 ### Example
 ```yaml
 steps:
-  - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/update-sql@v4.27.0
+  - uses: actions/checkout@v4
+  - uses: bonnasys/liquibase-update-sql@v4.27.0
     with:
       changelogFile: ""
       url: ""
