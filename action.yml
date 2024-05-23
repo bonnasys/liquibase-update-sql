@@ -25,6 +25,7 @@ inputs:
   driver: # string
     description: 'The JDBC driver class'
     required: false
+    default: 'com.mysql.cj.jdbc.Driver'
   driverPropertiesFile: # string
     description: 'The JDBC driver properties file'
     required: false
@@ -73,6 +74,7 @@ inputs:
   classpath: # string
     description: 'Additional classpath entries to use'
     required: false
+    default: 'driver.jar'
   convertDataTypes: # bool
     description: 'Should Liquibase convert to/from STANDARD data types. Applies to both snapshot and update commands.'
     required: false
