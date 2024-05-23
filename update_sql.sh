@@ -395,4 +395,4 @@ if [[ -n "$WORKAROUNDORACLECLOBCHARACTERLIMIT" ]]; then
 	GLOBALS+=("--workaround-oracle-clob-character-limit=$WORKAROUNDORACLECLOBCHARACTERLIMIT")
 fi
 
-docker-entrypoint.sh "${GLOBALS[@]}" update-sql "${PARAMS[@]}"
+docker-entrypoint.sh "${GLOBALS[@]}" update-sql "${PARAMS[@]}" --driver=com.mysql.cj.jdbc.Driver --classpath=driver.jar
