@@ -24,6 +24,7 @@ inputs:
   driver: # string
     description: 'The JDBC driver class'
     required: false
+    default: 'com.mysql.cj.jdbc.Driver'
   driverPropertiesFile: # string
     description: 'The JDBC driver properties file'
     required: false
