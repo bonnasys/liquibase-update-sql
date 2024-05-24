@@ -2,4 +2,5 @@
 FROM liquibase/liquibase:4.27.0
 COPY update_sql.sh /entry.sh
 COPY lib/mysql-connector-8.0.28.jar /liquibase/lib/mysql-connector-8.0.28.jar
+COPY . .
 ENTRYPOINT ["/entry.sh"]
